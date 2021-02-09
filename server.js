@@ -30,8 +30,7 @@ app.use(bodyParser.urlencoded({
 }));
 var corsOptions = {
   origin: 'https://dino-friends.netlify.app',
-  optionsSuccessStatus: 200, // For legacy browser support
-  methods: "GET, PUT, POST"
+  optionsSuccessStatus: 200
 }
 
 app.use(cors(corsOptions));
