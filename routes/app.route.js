@@ -7,6 +7,8 @@ const User = require('../controllers/user.controller');
 
 const jwtHelper = require('../config/jwtHelper');
 
+UserRoute.options('*', cors())
+
 UserRoute.post('/register', User.register);
 UserRoute.post('/authenticate', User.authenticate);
 UserRoute.put('/edit', User.edit);
